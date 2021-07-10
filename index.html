@@ -1,0 +1,25 @@
+<html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>Header1</header>
+    <main data-for="fl:10">
+        <section data-for="fv:10">
+            <article>
+                <span data-text="${fl.index} - ${fv.index}"></span>
+            </article>
+        </section>
+    </main>
+    <footer>Footer1<button>Press</button></footer>
+</body>
+<script src="reken-0.3.0.js"></script>
+<script>
+    // Uncomment to activate server worker, be sure to update pwa-sw.js with the appropriate files to cache
+    // if('serviceWorker' in navigator) {
+    //     navigator.serviceWorker.register('sw.js');
+    // };
+</script>
+</html>
